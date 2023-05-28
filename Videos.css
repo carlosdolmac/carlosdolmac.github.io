@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+    position: relative;
+  }
+  
+  #full-screen-image {
+    background-image: url(imagenes/Inicio/FondoEdge.PNG);
+    position: relative;
+    z-index: 1;
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 20px rgb(0, 0, 0);
+  }
+
+/* Estilos para las secciones */
+section {
+    text-align: center;
+
+    margin: 20px;
+    border-radius: 20px;
+  }
+
+  #SmackDown{
+    background-color: rgb(1, 1, 126);
+  }
+  #NXT{
+    background-color: rgb(180, 134, 9);
+  }
+  #RAW{
+    background-color: rgb(125, 3, 3);
+  }
+
+  /* Estilos para los videos en la sección principal */
+  .video-container {
+    display: inline-block;
+    width: 560px;
+    height: 315px;
+    margin: 20px;
+  }
+
+/* Estilos para la lista vertical de videos */
+.video-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .video-list iframe {
+    width: 280px; /* Tamaño pequeño */
+    height: 157.5px;
+    margin-bottom: 10px;
+  }
+  
+
+    /* Estilos para pantallas más pequeñas */
+    @media (max-width: 600px) {
+      .video-list,
+      .video-list iframe {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+      }
+      
+      #main-section .video-container {
+        max-width: 100%;
+        padding-bottom: 56.25%; /* Proporción de aspecto 16:9 */
+        position: relative;
+      }
+    
+      #main-section .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    
+
+  

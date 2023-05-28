@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #full-screen-image {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    animation: bg 5s linear infinite;
+  }
+
+  @keyframes bg {
+    0% {filter: hue-rotate(0deg);}
+    100% {filter: hue-rotate(360deg);}
+  }
+  
+  header {
+    background-color: #333;
+    background-image: url(imagenes/Inicio/2k23logo.png);
+    background-size: 210px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    text-shadow: 4px 4px 3px black;
+  }
+
+  header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  
+  @font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('Fuentes/Creepster-Regular.ttf')
+  }
+
+  header h1.mi-fuente {
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    font-size: 1cm;
+    color: white;
+    text-shadow: 4px 4px 3px black;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+/*Títulos*/
+  h1, h2 {
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    text-shadow: 4px 4px 3px black;
+  }
+  
+  /* Estilos para el enlace "Volver arriba" */
+  #volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  #volver-arriba:hover {
+    background-color: rgb(50, 6, 108);
+  }
+  
+  /* Estilos de pie de página */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    .luchador {
+      width: 100%;
+    }
+  }
+  

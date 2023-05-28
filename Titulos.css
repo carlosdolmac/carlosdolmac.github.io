@@ -1,0 +1,141 @@
+
+    /* Estilos generales */
+#full-screen-image {
+  background-image: url(imagenes/Inicio/FondoRhea.PNG);
+}
+
+h1 {
+  text-align: center;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos del aside */
+aside {
+  flex: 0 0 200px;
+  padding: 20px;
+  background-color: #05621e;
+  color: rgb(195, 189, 189);
+  z-index: 1;
+}
+.titulo-campeonatos-especiales {
+  color: transparent;
+  text-shadow: 1px 1px 15px rgb(0, 255, 85);
+}
+
+.titulo-campeonatos-especiales:hover {
+  color: #53563d;
+  text-shadow: 1px 1px 3px #000;
+}
+
+#aside-campeonatos-especiales:target {
+  display: block; /* Mostrar el aside cuando el :target coincida con su id */
+}
+
+#aside-campeonatos-especiales {
+  display: none; /* Ocultar el aside inicialmente */
+}
+aside h2 {
+  margin-bottom: 10px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li {
+  margin-bottom: 5px;
+}
+
+aside img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Estilos de los títulos de los campeonatos */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tarjeta {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.tarjeta:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.tarjeta:hover .back {
+  transform: rotateY(0);
+}
+
+.foto {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.back {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.foto h3 {
+  margin-bottom: 10px;
+}
+
+.foto p {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .tarjeta {
+    width: 100%;
+    max-width: 400px;
+  }
+}
